@@ -1,6 +1,6 @@
 ## Customer Segmentation Comparison: KMeans vs Hierarchical Clustering
 
-📌 Project Overview
+**📌 Project Overview**
 
 This repository demonstrates Customer Segmentation using two clustering
 algorithms:
@@ -12,7 +12,7 @@ grouped based on Annual Income and Spending Score.
 
 ------------------------------------------------------------------------
 
-🔍 Algorithm Comparison
+**🔍 Algorithm Comparison**
 
 -   KMeans Clustering:
     -   Centroid-based algorithm.
@@ -25,7 +25,7 @@ grouped based on Annual Income and Spending Score.
 
 ------------------------------------------------------------------------
 
-📊 Business Decisions for Each Cluster
+**📊 Business Decisions for Each Cluster**
 
 -   VIP Customers (most valuable 💎)
     -   Premium services, loyalty programs, exclusive discounts.
@@ -49,7 +49,7 @@ grouped based on Annual Income and Spending Score.
 
 ------------------------------------------------------------------------
 
-📂 Files Included
+**📂 Files Included**
 
 -   kmeans_customer_segmentation.ipynb → KMeans clustering
     implementation.
@@ -59,7 +59,7 @@ grouped based on Annual Income and Spending Score.
 -   K-Means VS Hierarchical plot.png →  For comparing the results of both the algorithms.
 ------------------------------------------------------------------------
 
-👨‍💻 Author
+**👨‍💻 Author**
 
 Saifullah Umar
 - 📍 BS Artificial Intelligence Student at Nutech University Islamabad, Pakistan.
