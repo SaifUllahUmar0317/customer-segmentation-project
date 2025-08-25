@@ -1,46 +1,67 @@
-Customer Segmentation using Clustering
+Customer Segmentation Comparison: KMeans vs Hierarchical Clustering
+
 📌 Project Overview
 
-This project demonstrates customer segmentation using two clustering algorithms: K-Means Clustering and Agglomerative (Hierarchical) Clustering.
+This repository demonstrates Customer Segmentation using two clustering
+algorithms:
+1. KMeans Clustering
+2. Agglomerative (Hierarchical) Clustering
 
-The dataset used is the Mall Customers dataset, which contains features such as Annual Income and Spending Score. By segmenting customers, businesses can better understand customer groups and apply targeted strategies.
+Both are applied on the Mall Customers dataset, where customers are
+grouped based on Annual Income and Spending Score.
 
-🔍 Comparison of K-Means and Agglomerative Clustering
+------------------------------------------------------------------------
 
-K-Means Clustering:
-✅ Efficient, works well for large datasets.
-✅ Assigns clusters by minimizing distance to centroids.
+🔍 Algorithm Comparison
 
-Agglomerative Clustering:
-✅ Hierarchical, builds clusters step by step.
-✅ Provides a dendrogram to help determine cluster count.
+-   KMeans Clustering:
+    -   Centroid-based algorithm.
+    -   Fast and scalable for large datasets.
+    -   Requires choosing k (number of clusters).
+-   Hierarchical Clustering:
+    -   Tree-based (builds a hierarchy of clusters).
+    -   Dendrogram helps to decide cluster count.
+    -   Computationally heavier for large datasets.
 
-➡ Both methods gave similar segmentation results, but:
+------------------------------------------------------------------------
 
-Agglomerative Clustering offers better interpretability (via dendrogram).
+📊 Business Decisions for Each Cluster
 
-K-Means is computationally faster for large-scale problems.
+-   VIP Customers (most valuable 💎)
+    -   Premium services, loyalty programs, exclusive discounts.
+    -   Keep them happy → major revenue source.
+-   Inactive Customers (low spenders 🚫)
+    -   Don’t spend big marketing budget.
+    -   Maybe low-cost offers (oil change, free car wash).
+    -   If no response → ignore to save money.
+-   Balanced Customers ⚖️
+    -   Steady income.
+    -   Cross-sell maintenance add-ons (battery check, filters).
+    -   Base revenue customers.
+-   Saver Customers (want to save 💰)
+    -   Attracted by discounts/coupons.
+    -   Upsell affordable bundles.
+    -   Not interested in luxury services.
+-   Spender Customers 🛒
+    -   Spend a lot but not always rich.
+    -   Personalized deals, limited-time offers.
+    -   Can be converted into VIPs if nurtured.
 
-📊 Business Insights from Clusters
+------------------------------------------------------------------------
 
-VIP Customers (💎) – High income, high spending
-→ Provide premium services & loyalty programs.
+📂 Files Included
 
-Inactive Customers (🚫) – Low income, low spending
-→ Don’t spend much marketing budget here.
-
-Balanced Customers – Average income, average spending
-→ Cross-sell maintenance services.
-
-Saver Customers (💰) – Low income, cautious spenders
-→ Attract with discounts & affordable bundles.
-
-Spender Customers – Spend a lot, but not consistent
-→ Target with limited-time offers & personalized deals.
+-   kmeans_customer_segmentation.ipynb → KMeans clustering
+    implementation.
+-   hierarchical_customer_segmentation.ipynb → Agglomerative clustering
+    implementation.
+-   requirements.txt → Required dependencies.
+-   K-Means VS Hierarchical plot.png →  For comparing the results of both the algorithms.
+------------------------------------------------------------------------
 
 👨‍💻 Author
 
 Saifullah Umar
-📍 BS Artificial Intelligence Student, New Tech University Islamabad
-🔗 GitHub: [Your GitHub Link Here]
-📧 Contact: [Your Email Here]
+- 📍 BS Artificial Intelligence Student at Nutech University Islamabad, Pakistan.
+- 🔗 GitHub: https://github.com/SaifUllahUmar0317
+- 📧 Contact: saifpakistani0317@gmail.com
