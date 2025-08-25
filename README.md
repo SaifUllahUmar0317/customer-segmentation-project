@@ -1,4 +1,4 @@
-# Customer Segmentation Comparison: KMeans vs Hierarchical Clustering
+### Customer Segmentation Comparison: KMeans vs Hierarchical Clustering
 
 📌 Project Overview
 
