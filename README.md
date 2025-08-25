@@ -1,111 +1,46 @@
-🛍️ Customer Segmentation using K-Means & Hierarchical Clustering
+Customer Segmentation using Clustering
 📌 Project Overview
 
-This project applies unsupervised machine learning algorithms to segment mall customers based on their annual income and spending score.
+This project demonstrates customer segmentation using two clustering algorithms: K-Means Clustering and Agglomerative (Hierarchical) Clustering.
 
-By grouping customers into different clusters, businesses can better understand their customers and make data-driven marketing decisions.
+The dataset used is the Mall Customers dataset, which contains features such as Annual Income and Spending Score. By segmenting customers, businesses can better understand customer groups and apply targeted strategies.
 
-📊 Algorithms Used
-1️⃣ K-Means Clustering
+🔍 Comparison of K-Means and Agglomerative Clustering
 
-Divides data into K groups based on proximity to centroids.
+K-Means Clustering:
+✅ Efficient, works well for large datasets.
+✅ Assigns clusters by minimizing distance to centroids.
 
-Works best for large datasets.
+Agglomerative Clustering:
+✅ Hierarchical, builds clusters step by step.
+✅ Provides a dendrogram to help determine cluster count.
 
-Faster and more scalable than hierarchical methods.
+➡ Both methods gave similar segmentation results, but:
 
-2️⃣ Hierarchical Clustering (Agglomerative)
+Agglomerative Clustering offers better interpretability (via dendrogram).
 
-Builds a dendrogram tree to visualize merging of clusters.
+K-Means is computationally faster for large-scale problems.
 
-Does not require predefining K (can be decided from dendrogram).
+📊 Business Insights from Clusters
 
-Useful for small to medium datasets and deeper cluster analysis.
+VIP Customers (💎) – High income, high spending
+→ Provide premium services & loyalty programs.
 
-📂 Dataset
+Inactive Customers (🚫) – Low income, low spending
+→ Don’t spend much marketing budget here.
 
-Mall Customers Dataset
+Balanced Customers – Average income, average spending
+→ Cross-sell maintenance services.
 
-Features used:
+Saver Customers (💰) – Low income, cautious spenders
+→ Attract with discounts & affordable bundles.
 
-Annual Income (k$)
-
-Spending Score (1-100)
-
-📈 Results
-🔹 K-Means Clustering
-
-Number of clusters chosen = 5
-
-Final groups:
-
-VIP Customers (High Income, High Spending)
-
-Inactive Customers (Low Income, Low Spending)
-
-Balanced Customers (Mid Income, Mid Spending)
-
-Saver Customers (Low Spending, Cost-conscious)
-
-Spender Customers (Impulsive spenders, not always rich)
-
-📊 Visualization:
-
-Centroids shown with red stars.
-
-Clear separation of customer groups.
-
-🔹 Hierarchical Clustering
-
-Dendrogram used to find optimal clusters = 5
-
-Groups similar to K-Means but with slightly different boundaries.
-
-Provides hierarchy of merges → useful for deeper insights.
-
-📊 Visualization:
-
-Dendrogram shows customer merging process.
-
-Scatter plot with colored clusters.
-
-🧩 Comparison
-Aspect	K-Means	Hierarchical
-Speed	✅ Fast	❌ Slower
-Scalability	✅ Large datasets	❌ Small/medium only
-Deciding Clusters	❌ Must predefine K	✅ Dendrogram helps
-Interpretability	Medium	✅ Very High
-Best Use Case	Customer segmentation at scale	Deep analysis, smaller data
-💡 Business Insights
-
-VIP Customers 💎 → Premium services, loyalty programs.
-
-Inactive Customers 🚫 → Don’t invest too much in them.
-
-Balanced Customers 🔄 → Steady base revenue, cross-sell services.
-
-Saver Customers 💰 → Attract with coupons, avoid luxury upsells.
-
-Spender Customers ⚡ → Promote limited-time offers, convert to VIP.
-
-⚙️ Technologies Used
-
-Python 🐍
-
-Scikit-learn 🤖
-
-Scipy 📐
-
-Pandas, NumPy 📊
-
-Matplotlib 🎨
+Spender Customers – Spend a lot, but not consistent
+→ Target with limited-time offers & personalized deals.
 
 👨‍💻 Author
 
 Saifullah Umar
-
-🎓 BS Artificial Intelligence Student @ New Tech University, Islamabad
-
-💻 Aspiring Machine Learning Engineer
-
-📂 GitHub: [Your GitHub Link Here]
+📍 BS Artificial Intelligence Student, New Tech University Islamabad
+🔗 GitHub: [Your GitHub Link Here]
+📧 Contact: [Your Email Here]
