@@ -1,90 +1,116 @@
-# 🛠️ Customer Segmentation using K-Means Clustering
+🛍️ Customer Segmentation using K-Means & Hierarchical Clustering
 
-This project applies **K-Means clustering** to segment customers based on their **Annual Income** and **Spending Score**.  
-It helps businesses understand different types of customers and design better marketing strategies.
+📌 Project Overview
 
----
+This project applies unsupervised machine learning algorithms to segment
+mall customers based on their annual income and spending score.
 
-## 📌 Project Overview
-- Dataset: Mall Customers Dataset  
-- Features used: Annual Income (k$), Spending Score (1-100)  
-- Algorithm: K-Means Clustering  
-- Output: 5 customer segments with business insights
+By grouping customers into different clusters, businesses can better
+understand their customers and make data-driven marketing decisions.
 
----
+------------------------------------------------------------------------
 
-## 📊 Customer Segments & Business Decisions
+📊 Algorithms Used
 
-### 1. VIP Customers (most valuable 💎)
-- Give them premium services (priority support, loyalty programs).
-- Offer exclusive discounts (because they can afford & are loyal).
-- Keep them happy → they bring major revenue.
+1️⃣ K-Means Clustering
 
-### 2. Inactive Customers (low spenders 🚫)
-- Don’t spend too much marketing budget here.
-- Maybe target them with low-cost offers (oil change discount, free car wash).
-- If they don’t respond → better to ignore (avoid wasting money).
+-   Divides data into K groups based on proximity to centroids.
+-   Works best for large datasets.
+-   Faster and more scalable than hierarchical methods.
 
-### 3. Balanced Customers
-- Good steady customers.
-- Offer cross-selling (add-on services like battery check, air filter).
-- Keep them in the system as long-term base revenue.
+2️⃣ Hierarchical Clustering (Agglomerative)
 
-### 4. Saver Customers (want to save 💰)
-- Attract them with discounts / coupons.
-- Upsell affordable packages (basic maintenance bundle).
-- Don’t pitch luxury services → they won’t buy.
+-   Builds a dendrogram tree to visualize merging of clusters.
+-   Does not require predefining K (can be decided from dendrogram).
+-   Useful for small to medium datasets and deeper cluster analysis.
 
-### 5. Spender Customers (spend a lot, but not always rich)
-- Offer personalized deals (e.g., tire + brake combo).
-- They’re impulse buyers → promote limited-time offers.
-- They can be converted into VIPs if nurtured.
+------------------------------------------------------------------------
 
----
+📂 Dataset
 
-## 🚀 Tech Stack
-- Python 🐍
-- Pandas, NumPy
-- Scikit-learn (KMeans)
-- Matplotlib for visualization
+-   Mall Customers Dataset
+-   Features used:
+    -   Annual Income (k$)
+    -   Spending Score (1-100)
 
----
+------------------------------------------------------------------------
 
-## 📂 How to Run
-1. Clone this repo  
-2. Install dependencies  
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Run the script  
-   ```bash
-   python customer_segmentation.py
-   ```
+📈 Results
 
----
+🔹 K-Means Clustering
 
-## 📈 Results
-- Identified **5 meaningful customer groups**
-- Provided **business strategies** for each group
-- Helps in **better marketing & customer retention**
+-   Number of clusters chosen = 5
+-   Final groups:
+    -   VIP Customers (High Income, High Spending)
+    -   Inactive Customers (Low Income, Low Spending)
+    -   Balanced Customers (Mid Income, Mid Spending)
+    -   Saver Customers (Low Spending, Cost-conscious)
+    -   Spender Customers (Impulsive spenders, not always rich)
 
----
+📊 Visualization:
+- Centroids shown with red stars.
+- Clear separation of customer groups.
 
-## 💡 Future Improvements
-- Add more features (Age, Gender, Service History)
-- Try other clustering methods (DBSCAN, Hierarchical)
-- Build a simple UI for businesses to upload customer data and get segmentation results
+------------------------------------------------------------------------
 
----
+🔹 Hierarchical Clustering
+
+-   Dendrogram used to find optimal clusters = 5
+-   Groups similar to K-Means but with slightly different boundaries.
+-   Provides hierarchy of merges → useful for deeper insights.
+
+📊 Visualization:
+- Dendrogram shows customer merging process.
+- Scatter plot with colored clusters.
+
+------------------------------------------------------------------------
+
+🧩 Comparison
+
+  ------------------------------------------------------------------------
+  Aspect                             K-Means        Hierarchical
+  ---------------------------------- -------------- ----------------------
+  Speed                              ✅ Fast        ❌ Slower
+
+  Scalability                        ✅ Large       ❌ Small/medium only
+                                     datasets       
+
+  Deciding Clusters                  ❌ Must        ✅ Dendrogram helps
+                                     predefine K    
+
+  Interpretability                   Medium         ✅ Very High
+
+  Best Use Case                      Customer       Deep analysis, smaller
+                                     segmentation   data
+                                     at scale       
+  ------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+💡 Business Insights
+
+-   VIP Customers 💎 → Premium services, loyalty programs.
+-   Inactive Customers 🚫 → Don’t invest too much in them.
+-   Balanced Customers 🔄 → Steady base revenue, cross-sell services.
+-   Saver Customers 💰 → Attract with coupons, avoid luxury upsells.
+-   Spender Customers ⚡ → Promote limited-time offers, convert to VIP.
+
+------------------------------------------------------------------------
+
+⚙️ Technologies Used
+
+-   Python 🐍
+-   Scikit-learn 🤖
+-   Scipy 📐
+-   Pandas, NumPy 📊
+-   Matplotlib 🎨
+
+------------------------------------------------------------------------
 
 👨‍💻 Author
 
-Saifullah Umar
-
-🎓 BS Artificial Intelligence Student at New Tech University Islamabad, Pakistan
-
-🤖 Aspiring Machine Learning Engineer.
-
-📧 Contact: saifpakistani0317@gmail.com
-
-🌐 GitHub: https://github.com/SaifUllahUmar0317
+SAIF ULLAH UMAR	
+- 🎓 BS Artificial Intelligence Student @ New Tech University, Islamabad
+- 💻 Aspiring Machine Learning Engineer
+- 📂 GitHub: https://github.com/SaifUllahUmar0317
+------------------------------------------------------------------------
